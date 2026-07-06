@@ -1,0 +1,23 @@
+import { Volume2 } from 'lucide-react';
+function UsefulPhraseCard({phrase, translation}) {
+    return (
+        <>
+            <div className="max-w-lg min-h-[320px] space-y-7 border-gray-200 shadow-sm rounded-3xl border p-8">
+                <h2 className = "text-4xl font-semibold">{phrase}</h2>
+                <h4 className = "text-lg text-gray-500">{translation}</h4>
+                <button className = " hover:bg-[#313315] transition-colors duration-200 flex h-10 w-36 items-center justify-center gap-2 rounded-lg bg-[#41431B] text-white"> 
+                    <Volume2 size={18}></Volume2>
+                    Listen 
+                </button>
+                <div className = "flex gap-6">
+                    <button className = "hover:bg-[#AEB784] hover:text-white transition-colors duration-200 flex h-10 w-28 items-center justify-center rounded-lg text-[#41431B] bg-white border border-[#AEB784]"> ← Back </button>
+                    <button className = "hover:bg-[#AEB784] hover:text-white transition-colors duration-200 flex h-10 w-28 items-center justify-center rounded-lg text-[#41431B] bg-white border border-[#AEB784]"> Next → </button>
+                </div>
+                <div className="text-sm text-gray-500">
+                    Phrase 1 of 10
+                </div>
+            </div>
+        </>
+    )
+}
+export default UsefulPhraseCard;
